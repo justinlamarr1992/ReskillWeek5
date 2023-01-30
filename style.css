@@ -167,6 +167,10 @@ margin: 10px;
     display: inline-block;
     padding: 0 20px;
 }
+header hr{
+    color: var(--pri-c);
+
+}
 
 .hero{
     width: 100%;
