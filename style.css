@@ -64,6 +64,10 @@ body {
     font-family: var(--font);
     transition: all 0.3s ease-in-out;
 }
+body > div:first-of-type { 
+    padding-top: 10%;
+}
+
  h1 {
      font-size: var(--w45);
      font-weight: 800;
@@ -113,6 +117,9 @@ body {
     line-height: 18px;
     margin: 0;
  }
+ ul {
+    list-style-type: none;
+}
 
 li,
 a {
@@ -126,7 +133,14 @@ button{
         font-weight: 700;
         line-height: 18px;
 }
+img {
+    width: 100%;
+}
+.bold{
+    font-weight: 800;
+}
 
+/* Nav */
 header{
     position: fixed;
     z-index: 3;
@@ -172,9 +186,11 @@ header hr{
 
 }
 
+/* Home */
+
 .hero{
     width: 100%;
-    height: 600px;
+    height: 500px;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 45% 10% 45%;
@@ -239,4 +255,48 @@ flex-direction: column;
 }
 .books-bottom-book h6 {
    
+}
+
+/* About Page */
+.left-nav-page{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.left-nav-page-left{
+    padding-left: 60px;
+    /* height: 100vh; */
+    width: 30%;
+}
+.left-nav-page-left-list li{
+padding:10px 0;
+color: var(--pri-t);
+}
+.left-nav-page-right{
+    color: var(--pri-t);
+    /* height: 100vh; */
+    width: 70%;
+}
+.left-nav-page-right h2{
+    padding-bottom: 10px;
+}
+.left-nav-page-right h3{
+    padding-bottom: 50px;
+}
+.about-text-and-img{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 45%;
+    column-gap: 25px;
+}
+.about-text-and-img img{
+    align-self: center;
+}
+
+.about-imgs {
+    padding-top: 50px;
+    padding-right: 25px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
 }
